@@ -1,0 +1,20 @@
+Get demographics data from Gerrit via bitergia.
+
+Copy/pasted instructions from an email from Andre:
+1. Go to "Community Demographics" dashboard at
+https://wikimedia.biterg.io/app/kibana#/dashboard/15e4b020-d075-11e8-8aac-ef7fd4d8cbad
+2. Set "Data Source" to "Gerrit"
+3. Realize "Last Attracted Developers" panel list only goes back to
+July 2019
+4. Go to "Visualize" in side bar and select "demographics_newcomers"
+5. In the side panel, under "Buckets", expand "Split Rows" and increase
+Size from "250" to "400" to cover complete year. Click "Save" in top
+bar to temporarily overwrite this visualization.
+6. Go back to "Last Attracted Developers" panel
+7. Click "Export: Formatted" at the bottom
+8. Open CSV file in LibreOffice
+9. Remove all items older than a year
+10. Remove all columns except for name
+11. Open CSV file in a plain text editor to construct a long
+author_name:"ABC" OR author_name:"XYZ" custom query
+12. Paste custom query on Gerrit Efficiency panel
